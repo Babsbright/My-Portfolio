@@ -5,7 +5,8 @@
   cursor: pointer;
 }
 body {
-  background-color: #0f3b57;
+  background-color: #0b3f5f;
+  /* background-color: rgb(10, 25, 47); */
   font-family: "Merriweather", serif;
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
@@ -75,7 +76,7 @@ a.link {
   content: ".";
 }
 .resume {
-  color: #64ffda;
+  color: rgb(100, 255, 218);
   border: 2px dotted #64ffda;
   border-radius: 8px;
   padding: 0.75rem 1rem;
@@ -264,7 +265,8 @@ a.job_tab.active {
 .projDetails {
   color: rgb(204, 214, 246);
   width: 115%;
-  background-color: #122d3d;
+  /* background-color: #122d3d; */
+  background-color: rgb(23, 42, 69);
   margin-top: 0.5rem;
   position: relative;
   z-index: 2;
