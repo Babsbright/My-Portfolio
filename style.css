@@ -1,0 +1,392 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+body {
+  background-color: #0f3b57;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+#header {
+  padding: 2.5rem 1.5rem;
+}
+/**Reusables**/
+.btn {
+  padding: 0;
+}
+.opaqueBackground {
+  font-size: 5rem;
+  color: #d9e3e5;
+  opacity: 0.03;
+  position: relative;
+  bottom: -7rem;
+}
+.main-heading {
+  margin-left: 2.5rem;
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: rgb(204, 214, 246);
+}
+
+.main-heading span {
+  color: rgb(100, 255, 218);
+  padding-right: 0.5rem;
+}
+
+.main-heading span:after {
+  content: ".";
+}
+.noIcon,
+.none {
+  display: none;
+}
+.noListDisplay {
+  list-style: none;
+}
+.listItem {
+  display: inline;
+  padding-left: 20px;
+}
+.mobileItems {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  font-size: 1rem;
+  padding: 1.7rem 0;
+}
+.link {
+  color: rgb(204, 214, 246);
+  text-decoration: none;
+}
+.spanNo {
+  color: rgb(100, 255, 218);
+  padding-right: 0.7rem;
+}
+.mobileSpan {
+  padding-right: 0;
+}
+.spanNo::after {
+  content: ".";
+}
+.resume {
+  color: #64ffda;
+  border: 2px dotted #64ffda;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  font-size: 14px;
+}
+.mobileCv {
+  padding: 0.9rem 1.1rem;
+  text-align: center;
+  font-weight: 500;
+}
+/**Mobile Navigation**/
+.mobile-navbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  width: 75%;
+  height: 100%;
+  background-color: #122d3d;
+}
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+/**Hero Section**/
+.hero-heading {
+  color: rgb(100, 255, 218);
+  font-size: 1.2rem;
+  letter-spacing: 0.06rem;
+}
+.hero-subheading {
+  color: #d9e3e5;
+  font-size: 4.5rem;
+}
+.heroCodeSub {
+  font-size: 4rem;
+  color: rgb(204, 214, 246);
+}
+.hero-subheading::after,
+.heroCodeSub::after {
+  content: ".";
+}
+.hero-description {
+  color: rgb(204, 214, 246);
+  letter-spacing: 0.07rem;
+  width: 70%;
+  line-height: 1.65rem;
+  font-family: cursive, monospace;
+}
+.hero-btn a {
+  text-transform: capitalize;
+  color: #64ffda;
+  border: 2px dotted #64ffda;
+  border-radius: 8px;
+  padding: 1rem 1.15rem;
+  text-decoration: none;
+}
+
+/**About Section**/
+.aboutText {
+  color: rgb(204, 214, 246);
+  line-height: 1.6rem;
+  font-size: 1rem;
+  letter-spacing: 0.07rem;
+}
+.techs {
+  color: rgb(204, 214, 246);
+  list-style: none;
+}
+
+.techs li {
+  padding-bottom: 0.5rem;
+}
+.techs li:before {
+  content: "▹";
+  padding-right: 1rem;
+  color: #64ffda;
+}
+
+/**Experiences Section**/
+.tabs {
+  margin: 3rem 7rem;
+}
+.workPlaces {
+  border-left: 2px solid rgb(168, 178, 209);
+  border-radius: 20px;
+}
+.workPlaces span {
+  padding: 1rem;
+  font-weight: 300;
+}
+a.job_tab {
+  color: rgb(204, 214, 246);
+  font-size: 1rem;
+  text-decoration: none;
+}
+a.job_tab.active {
+  color: #64ffda;
+}
+.job-heading {
+  color: rgb(204, 214, 246);
+  font-size: 1.3rem;
+}
+.job-heading span {
+  color: #64ffda;
+}
+.job-date {
+  color: rgb(168, 178, 209);
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.jobDesc ul {
+  list-style: none;
+}
+.jobDesc ul li {
+  padding-top: 1rem;
+  margin-left: 1rem;
+  font-size: 0.95rem;
+  color: rgb(204, 214, 246);
+  letter-spacing: 0.01rem;
+  line-height: 1.4rem;
+}
+.jobDesc ul li::before {
+  content: "▹";
+  font-size: 1.5rem;
+  position: absolute;
+  left: 0;
+  color: rgb(100, 255, 218);
+}
+
+/**Projects Section**/
+.proj {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.leftProj {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+}
+.left {
+  text-align: left !important;
+}
+.projTitle {
+  color: #64ffda;
+  text-transform: capitalize;
+  font-size: 1rem;
+  margin-top: 0.6rem;
+  letter-spacing: 0.1rem;
+}
+.projName {
+  color: rgb(204, 214, 246);
+  font-size: 2.1rem;
+  font-weight: bold;
+}
+.projDetails {
+  color: rgb(204, 214, 246);
+  background-color: #122d3d;
+  border-radius: 5px;
+  position: relative;
+  width: 115%;
+  z-index: 2;
+  right: 50;
+  line-height: 1.5rem;
+  margin-top: 0.5rem;
+  padding: 1.25rem;
+  text-align: right;
+}
+.technologies {
+  list-style: none;
+}
+.technologies li {
+  display: inline-block;
+  padding-right: 1rem;
+  text-transform: capitalize;
+  color: rgb(204, 214, 246);
+  font-size: 15px;
+}
+.fontLinks span a {
+  color: rgb(204, 214, 246);
+  margin-right: 1.7rem;
+}
+.fontLinks span a i {
+  font-size: 20px;
+}
+/**Contact section**/
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#contact .main-heading,
+#contact .main-heading span {
+  color: #64ffda;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+  margin: auto;
+}
+.contactSubHead {
+  margin-top: 0.7rem;
+  color: rgb(204, 214, 246);
+  font-size: 2.6rem;
+  font-weight: 600;
+}
+.contact-details {
+  color: rgb(204, 214, 246);
+  font-size: 17px;
+  width: 60%;
+  margin: auto;
+}
+#contact button {
+  background-color: #0f3b57;
+}
+.hello {
+  margin-top: 1rem;
+  text-transform: capitalize;
+  border: 2px dotted #64ffda;
+  border-radius: 8px;
+  padding: 0.95rem 1.1rem;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  font-family: monospace;
+}
+.hello a {
+  text-decoration: none;
+  color: #64ffda;
+}
+/**Footer Section**/
+#footer {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.socials ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.socials ul li {
+  padding: 0 1rem;
+}
+.socials ul li a {
+  font-size: 1.5rem;
+  color: rgb(100, 255, 218);
+}
+#footer p {
+  color: rgb(204, 214, 246);
+  font-weight: 300;
+  font-size: 1rem;
+}
+#footer p span a {
+  color: #64ffda;
+}
+
+/**Responsiveness**/
+@media only screen and (max-width: 972px) {
+  .hero-description {
+    width: 100%;
+  }
+  .opaqueBackground {
+    font-size: 4rem;
+  }
+  .main-heading {
+    margin-left: 0;
+    font-size: 1.6rem;
+  }
+  .tabs {
+    margin: 3rem 0;
+  }
+  .smallMar {
+    margin-top: 2.5rem;
+  }
+  .contact-details {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 698px) {
+  #navbar {
+    display: none;
+  }
+  .hamburger-icon {
+    display: block;
+  }
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+  .hero-subheading {
+    font-size: 3.2rem;
+  }
+  .heroCodeSub {
+    font-size: 2.5rem;
+  }
+  .hero-description {
+    font-size: 0.9rem;
+  }
+  .opaqueBackground {
+    bottom: -6.5rem;
+  }
+  .tabs .flex-column {
+    flex-direction: row !important;
+  }
+}
